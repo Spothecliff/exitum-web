@@ -4,6 +4,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Exitum</title>
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
 <style>
   :root { --text: #1c1c1e; --muted: #5f6368; --bg: #ffffff; --accent: #0d7a56; --line: #e3e3e8; }
   @media (prefers-color-scheme: dark) { :root { --text: #f2f2f7; --muted: #a1a1aa; --bg: #111113; --accent: #4cc79a; --line: #2c2c30; } }
@@ -19,6 +21,9 @@
   .muted { color: var(--muted); font-size: 15px; }
   .lead { font-size: 19px; }
   a { color: var(--accent); }
+  .brand { display: flex; align-items: center; gap: 14px; margin-bottom: 10px; }
+  .brand img { width: 56px; height: 56px; border-radius: 13px; }
+  .brand h1 { margin: 0; }
 </style>
 </head>
 <body>
@@ -28,7 +33,10 @@
   <a href="soporte.html">Soporte</a>
 </nav>
 <main>
-  <h1>Exitum</h1>
+  <div class="brand">
+    <img src="logo.png" alt="" width="56" height="56">
+    <h1>Exitum</h1>
+  </div>
   <p class="lead">Fija tus objetivos (ahorro, hábitos, metas) y sigue tu patrimonio, todo en tu móvil.</p>
   <p>Sin publicidad ni rastreo. Tus datos se guardan en tu móvil y, si quieres, en una copia en la nube con tu cuenta de Apple o Google.</p>
   <ul>
