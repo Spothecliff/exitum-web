@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Exitum · Política de privacidad</title>
+<style>
+  :root { --text: #1c1c1e; --muted: #5f6368; --bg: #ffffff; --accent: #0d7a56; --line: #e3e3e8; }
+  @media (prefers-color-scheme: dark) { :root { --text: #f2f2f7; --muted: #a1a1aa; --bg: #111113; --accent: #4cc79a; --line: #2c2c30; } }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 17px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+  nav { max-width: 680px; margin: 0 auto; padding: 16px 16px 0; display: flex; gap: 18px; font-size: 15px; }
+  nav a { color: var(--muted); text-decoration: none; }
+  nav a.on { color: var(--accent); font-weight: 600; }
+  main { max-width: 680px; margin: 0 auto; padding: 24px 16px 56px; }
+  h1 { font-size: 28px; margin: 0 0 4px; }
+  h2 { font-size: 19px; margin: 28px 0 6px; padding-top: 18px; border-top: 1px solid var(--line); }
+  p, li { margin: 6px 0; }
+  ul { padding-left: 20px; }
+  .muted { color: var(--muted); font-size: 15px; }
+  .lead { font-size: 19px; }
+  a { color: var(--accent); }
+</style>
+</head>
+<body>
+<nav>
+  <a href="./">Exitum</a>
+  <a href="privacidad.html" class="on">Privacidad</a>
+  <a href="soporte.html">Soporte</a>
+</nav>
+<main>
+  <h1>Política de privacidad de Exitum</h1>
+  <p class="muted">Última actualización: 25 de octubre de 2026</p>
+
+  <p>Exitum es una app para seguir tus objetivos y tu patrimonio. La hace una sola persona, sin publicidad y sin vender datos. Aquí se explica qué datos usa y dónde van.</p>
+
+  <h2>Tus datos se guardan en tu móvil</h2>
+  <p>Todo lo que apuntas (objetivos, registro diario, activos, cantidades y notas) se guarda en una base de datos dentro de tu móvil. Sin cuenta, no sale de él.</p>
+
+  <h2>Cuenta y copia en la nube (opcional)</h2>
+  <p>Si creas una cuenta, entras con Apple o con Google; no hay contraseñas propias. De la cuenta se guardan:</p>
+  <ul>
+    <li>un identificador interno de la cuenta y el de tu cuenta de Apple o Google;</li>
+    <li>tu correo (con Apple puede ser el correo privado que te da Apple);</li>
+    <li>tu nombre, si Apple o Google lo comparten, y con Google también la dirección de tu foto de perfil;</li>
+    <li>registros técnicos de acceso (fecha y dirección IP), que guarda el proveedor para la seguridad de la cuenta.</li>
+  </ul>
+  <p>Con cuenta, la app sube cada día una copia de tus datos de la app. La copia incluye todo lo que apuntas, la versión de la app y si el móvil es iPhone o Android. Se conservan las últimas copias y las anteriores se borran solas.</p>
+  <p>Las copias se guardan en <a href="https://supabase.com/privacy">Supabase</a>, en un almacenamiento privado al que solo accede tu cuenta. Viajan cifradas (HTTPS) y Supabase cifra sus discos. No están cifradas de extremo a extremo: el responsable de la app podría acceder técnicamente a ellas, pero no lo hace salvo que tú se lo pidas para resolver un problema.</p>
+
+  <h2>Lectura de capturas (opcional)</h2>
+  <p>En la revisión de activos puedes elegir capturas de tus apps de inversión para que se lean solas. Solo funciona si pones tu propia clave de la API de Anthropic, que se guarda cifrada en el llavero de tu móvil.</p>
+  <p>Al usarlo, el móvil envía directamente a <a href="https://www.anthropic.com/legal/privacy">Anthropic</a> las imágenes que eliges y una instrucción para extraer las posiciones (nombre, ISIN, cantidad, valor). No pasan por ningún servidor de Exitum. Ese uso se rige por las condiciones de Anthropic de tu clave.</p>
+
+  <h2>Precios y tipos de cambio</h2>
+  <p>Para valorar tus activos, el móvil pide precios a servicios públicos: CoinGecko, Frankfurter, Yahoo Finance, Nasdaq, Tradegate y Lang &amp; Schwarz. Solo se envía el identificador del activo o la moneda (por ejemplo, un ISIN, un ticker o «USD»), nunca tus cantidades ni datos personales. Como en cualquier conexión a internet, esos servicios ven la dirección IP.</p>
+
+  <h2>Otros servicios</h2>
+  <ul>
+    <li><strong>Actualizaciones:</strong> la app consulta a Expo si hay una versión nueva, con datos técnicos (versión de la app y sistema).</li>
+    <li><strong>Avisos:</strong> los recordatorios son notificaciones locales del móvil; no se envían a ningún servidor.</li>
+    <li><strong>Enviar comentario:</strong> abre WhatsApp con un mensaje que incluye la versión de la app, el sistema y el modelo del móvil, y el registro de diagnóstico si lo añades. Solo se envía si tú lo mandas.</li>
+  </ul>
+
+  <h2>Sin publicidad ni rastreo</h2>
+  <p>Exitum no tiene publicidad, no usa herramientas de analítica ni de rastreo, y no comparte ni vende tus datos.</p>
+
+  <h2>Borrar tus datos</h2>
+  <ul>
+    <li><strong>Cuenta y copias:</strong> en la app, Ajustes → Cuenta → «Borrar cuenta». Se borran tu cuenta y todas tus copias en la nube al momento. Los datos del móvil se quedan.</li>
+    <li><strong>Datos del móvil:</strong> se borran al desinstalar la app.</li>
+    <li><strong>Clave de Anthropic:</strong> se quita desde Ajustes.</li>
+  </ul>
+
+  <h2>Contacto</h2>
+  <p>Para cualquier duda o para ejercer tus derechos sobre tus datos: <a href="mailto:marcsb2003@gmail.com">marcsb2003@gmail.com</a>.</p>
+</main>
+</body>
+</html>
